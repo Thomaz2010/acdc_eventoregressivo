@@ -1,0 +1,68 @@
+@use '../variaveis';
+
+.infos-bar {
+    padding: 50px 24px;
+    background-color:variaveis.$textColor;
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-style:double;
+    border-color:variaveis.$color2;
+   
+  
+    
+   &__infos {
+        display: flex;
+        gap: 40px;
+        flex: 1; /* Permitir que o container de informações ocupe o espaço restante */
+        flex-wrap: wrap; /* Permitir que os itens se encaixem em múltiplas linhas */
+       
+       
+
+     &__item {
+        font-size: 14px;
+        color: variaveis.$secundaryTextColor;
+        flex: 1; /* Permite que cada item ocupe espaço igual */
+        margin: 0 10px; /* Ajusta a margem entre os itens */
+       
+
+        }
+
+        b {
+            font-size: 18px;
+             display: block;
+             color:variaveis.$secundaryTextColor;
+             
+         }
+   }
+
+   @media(max-width:1024px){
+    &__infos{
+        gap: 16px;
+    }
+   }
+
+   @media (max-width:640px){
+        display: block;
+
+        &__infos {
+            display: block;
+        }
+
+        &__item {
+            margin-bottom: 24px;
+        }
+   }
+
+   @media(max-width:1024px) {
+    &__infos{
+        gap:16px;
+    }
+
+   }
+}

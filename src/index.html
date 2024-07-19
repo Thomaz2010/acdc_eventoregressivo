@@ -1,16 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>AC/DC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/main.scss">
 </head>
+
 <body>
-    <h1>teste</h1>
-    <img src="./images/acdc black.jpg" alt="">
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./images/acdclogo.jpg" alt="guitarrista">
+            <p class="hero__text">
+                O maior Show de Rock do Brasil começa em: <span id="contador"></span>
+            </p>
+        </div>
+
+        <div class="infos-bar">
+            <ul class="infos-bar__infos">
+                <li class="infos-bar__infos__item">
+                    <b>Localização</b>
+                    Estádio Morumbi - Morumbi <b>São Paulo</b>
+                </li>
+                <li class="infos-bar__infos__item">
+                    <b>Preço</b>
+                    A partir de R$ 320,00
+                </li>
+                <li class="infos-bar__infos__item">
+                    <b>Quando</b>
+                    12/12/2024 ás 19hrs
+                </li>
+            </ul>
+            <a href="#" class="button button--primary">
+                Garanta seu ingresso aqui
+            </a>
+
+            <div class="gps-button" id="gpsButton">
+                <img src="./images/gps.avif" alt="GPS Icon">
+            </div>
 
 
+        </div>
+
+
+
+    </header>
+    <section class="event event--one">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Thunderstruck</h2>
+                <p class="event__details__description">
+                    Foi composta no ano de 1990 pelos irmãos Angus Young e Malcolm Young, além do vocalista Brian
+                    Johnson e está presente no álbum The Razors Edge. No YouTube a canção tem 1.3 bilhões de
+                    visualizações, sendo a música mais vista do canal do ACDC na plataforma.
+
+                </p>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/v2AC41dglnM?si=mRtrnxqoAKAyL6mf"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </section>
+    <section class="event event--two event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Back in Black</h2>
+                <p class="event__details__description">
+                    A canção ficou em 4º na lista das 40 Maiores Canções Metal da VH1. Ficou também em 187º na lista das
+                    500 melhores canções de todos os tempos da Rolling Stone. "Back in Black" foi certificado com o RIAA
+                    Platinum Ringtone por ter registado a venda de mais de um milhão de downloads legais.
+                </p>
+
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pAgnJDJN4VA?si=Bq9FnzQ2NldPn77l"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </section>
+    <section class="event event--tree ">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Highway to Hell</h2>
+                <p class="event__details__description">
+                    A música 'Highway To Hell' da banda australiana AC/DC é um hino do rock que captura a essência da
+                    rebeldia e da busca pela liberdade. Lançada em 1979, a faixa se tornou uma das mais icônicas do
+                    grupo e é frequentemente associada ao estilo de vida rock and roll, marcado por excessos e desapego
+                    às convenções sociais.
+                </p>
+
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l482T0yNkeo?si=VXBNc6trtTCS2Dm3"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </section>
+    <section class="event event--four event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">You Shook Me All Night Long</h2>
+                <p class="event__details__description">
+                    A canção foi escrita por três integrantes da banda, Brian Johnson, Angus Young e seu irmão, Malcolm
+                    Young. A canção aborda relações íntimas praticadas por um casal durante uma noite.
+                </p>
+
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Lo2qQmj0_h4?si=TTzh0apmdvgFKNKt"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <h1">
+            <img class="footer__one" src="./images/circle-youtube_icon-icons.com_66837.png" alt="youtube">
+            <img class="footer__one" src="./images/facebook_108044.png" alt="facebook_108044">
+            <img class="footer__one" src="./images/whatsapp_109861.png" alt="whatsapp_109861">
+            </h1>
+            <p class="hero__text">A maior estrutura já vista no Brasil</p>
+            <h2>Confira nossas Redes Sociais</h2>
+            <p>@Todos os Direiros Reservados Thomaz Simão</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
+
 </html>

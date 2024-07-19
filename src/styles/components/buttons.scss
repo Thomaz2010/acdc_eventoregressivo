@@ -1,0 +1,31 @@
+@use '../variaveis';
+
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    display: inline-block; 
+    border-style: double;
+    border-color:variaveis.$color2;
+    border-radius: 10px;
+
+    &--primary {
+        color:variaveis.$textColor;
+        background-color: variaveis.$color5;
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        width: 48%;
+        align-items: center;
+        justify-content: center;
+    }
+}
