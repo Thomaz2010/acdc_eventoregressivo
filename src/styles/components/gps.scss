@@ -1,25 +1,76 @@
-
-
 .gps-button {
     width: 80px;
     height: 60px;
     background-color: #040000;
     border-radius: 50%;
+    border-style: double;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     margin: 10px;
     cursor: pointer;
+
+    &:hover {
+        background-color: #00b31e;
+        transform: scale(1.1);
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
 }
 
-.gps-button:hover {
-    background-color: #00b31e;
-    transform: scale(1.1);
+@media (max-width: 1024px) {
+    .gps-button {
+        width: 70px;
+        height: 50px;
+        margin: 8px;
+
+        img {
+            width: 35px;
+            height: 35px;
+        }
+    }
 }
 
-.gps-button img {
-    width: 40px;
-    height: 40px;
+@media (max-width: 640px) {
+    .gps-button {
+        width: 60px;
+        height: 45px;
+        margin: 6px;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .gps-button {
+        width: 50px;
+        height: 40px;
+        margin: 4px;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .gps-button {
+        width: 40px;
+        height: 35px;
+        margin: 2px;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
 }

@@ -5,7 +5,8 @@
     padding-bottom: 100px;
     background-image: url(../images/GettyImages-470251282-1422x800.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
+    background-position: center center; 
     position: relative;
 
     .container {
@@ -26,8 +27,8 @@
     &__text {
         margin-top: 64px;
         margin-bottom: 64px;
-        font-size: 3.125rem; // 50px
-        line-height: 3.5rem; // 56px
+        font-size: 3.125rem;
+        line-height: 3.5rem; 
         text-align: center;
         font-weight: bold;
     }
@@ -43,8 +44,8 @@
         border-style: double;
     }
 
-    // telas menores => responsividade
-    @media(max-width: 1024px) {
+    // Responsividade para telas menores que 1024px
+    @media (max-width: 1024px) {
         padding: 50px 0;
 
         &__text {
@@ -61,7 +62,8 @@
         }
     }
 
-    @media(max-width: 768px) {
+    // Responsividade para telas menores que 768px
+    @media (max-width: 768px) {
         padding: 40px 0;
 
         &__text {
@@ -78,7 +80,8 @@
         }
     }
 
-    @media(max-width: 640px) {
+    // Responsividade para telas menores que 640px
+    @media (max-width: 640px) {
         padding: 30px 0;
 
         &__logo {
@@ -90,6 +93,43 @@
             font-size: 1.375rem; 
             line-height: 1.5rem; 
             margin: 24px 0;
+        }
+    }
+
+    // Responsividade para telas de 0px a 639px
+    @media (max-width: 639px) {
+        padding-top: 20px;
+        padding-bottom: 40px;
+
+        &__text {
+            font-size: 1.125rem; // 18px
+            line-height: 1.25rem; // 20px
+            margin: 16px 0;
+        }
+
+        &__logo {
+            width: 75%;
+            margin-left: 12.5%;
+            margin-bottom: 150px;
+            margin-top: -20px;
+        }
+    }
+
+    // Ajuste adicional para telas muito pequenas
+    @media (max-width: 320px) {
+        background-position: top center; // Ajusta a posição para melhor visibilidade em telas muito pequenas
+
+        &__text {
+            font-size: 1rem; // 16px
+            line-height: 1.25rem; // 20px
+            margin: 12px 0;
+        }
+
+        &__logo {
+            width: 80%;
+            margin-left: 10%;
+            margin-bottom: 100px;
+            margin-top: -10px;
         }
     }
 }

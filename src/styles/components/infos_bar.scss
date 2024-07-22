@@ -19,16 +19,16 @@
    &__infos {
         display: flex;
         gap: 40px;
-        flex: 1; /* Permitir que o container de informações ocupe o espaço restante */
-        flex-wrap: wrap; /* Permitir que os itens se encaixem em múltiplas linhas */
+        flex: 1; 
+        flex-wrap: wrap; 
        
        
 
      &__item {
         font-size: 14px;
         color: variaveis.$secundaryTextColor;
-        flex: 1; /* Permite que cada item ocupe espaço igual */
-        margin: 0 10px; /* Ajusta a margem entre os itens */
+        flex: 1; 
+        margin: 0 10px; 
        
 
         }
